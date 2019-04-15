@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-04-15T20:53:59Z" name="Default suite" finished-at="2019-04-15T20:54:09Z" duration-ms="9533">
+    <groups>
+    </groups>
+    <test started-at="2019-04-15T20:53:59Z" name="Default test" finished-at="2019-04-15T20:54:09Z" duration-ms="9533">
+      <class name="com.cafe.Create">
+        <test-method is-config="true" signature="methodSetup()[pri:0, instance:com.cafe.Create@20d525]" started-at="2019-04-15T20:53:59Z" name="methodSetup" finished-at="2019-04-15T20:54:03Z" duration-ms="4180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodSetup -->
+        <test-method signature="CreateCustomer()[pri:0, instance:com.cafe.Create@20d525]" started-at="2019-04-15T20:54:03Z" name="CreateCustomer" finished-at="2019-04-15T20:54:09Z" duration-ms="5315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCustomer -->
+        <test-method is-config="true" signature="methodTearDown()[pri:0, instance:com.cafe.Create@20d525]" started-at="2019-04-15T20:54:09Z" name="methodTearDown" finished-at="2019-04-15T20:54:09Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodTearDown -->
+      </class> <!-- com.cafe.Create -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
