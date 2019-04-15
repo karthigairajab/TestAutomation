@@ -16,7 +16,7 @@ public class CreatePage extends BasePageObject<CreatePage> {
 	public CreatePage(WebDriver driver) {
 		super(driver);
 	}
-
+	//enter customer details
 	public void customerDetails(String firstName, String lastName, String startDate, String email) {
 		type(firstName, firstNameField);
 		type(lastName, lastNameField);

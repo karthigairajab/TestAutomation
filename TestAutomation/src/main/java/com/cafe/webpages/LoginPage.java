@@ -19,12 +19,12 @@ public class LoginPage extends BasePageObject<LoginPage> {
 	public void openLoginPage() {
 		getPage(URL);
 	}
-
+	//enter login details
 	public void loginDetails(String email, String password) {
 		type(email, userNameField);
 		type(password, passwordField);
 	}
-
+	//signin button
 	public MainPage signInButton() {
 		click(loginButton);
 		return new MainPage(driver);

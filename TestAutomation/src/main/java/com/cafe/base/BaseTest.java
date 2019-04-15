@@ -16,12 +16,13 @@ public class BaseTest {
 
 	@AfterMethod
 	protected void methodTearDown() {
-		// driver.quit();
+		 driver.quit();
 	}
-	
+	//constructor
 	public BaseTest()
     {
     }
+	// to return driver
     public WebDriver getDriver()
     {
         return this.driver;

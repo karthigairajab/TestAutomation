@@ -13,12 +13,12 @@ public class Create extends BaseTest {
 	public void CreateCustomer() throws InterruptedException {
 		String correctProfileName = "Hello Luke";
 		Login login = new Login();
-		login.LoginTest();
+		login.LoginTest(); //login into website
 		MainPage mainPage = new MainPage(driver);
-		CreatePage createPage = mainPage.clickCreateButton();
+		CreatePage createPage = mainPage.clickCreateButton(); //create
 		createPage.waitUntilLoad();
-		createPage.customerDetails("AMS", "NL", "2019-04-13", "amsnl@email.com");
-		MainPage mainPageAgain = createPage.clickAddButton();
+		createPage.customerDetails("AMS", "NL", "2019-04-13", "amsnl@email.com"); //create new customer
+		MainPage mainPageAgain = createPage.clickAddButton(); //add
 		Assert.assertTrue(mainPageAgain.isCorrectProfileLoaded(correctProfileName), "Profile Name not expected");
 	}
 

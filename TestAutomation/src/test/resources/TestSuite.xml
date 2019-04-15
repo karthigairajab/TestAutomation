@@ -6,4 +6,9 @@
 			<class name="com.cafe.Login" />
 		</classes>
 	</test>
+	<test name="CreateCustomer">
+		<classes>
+			<class name="com.cafe.Create" />
+		</classes>
+	</test>
 </suite>

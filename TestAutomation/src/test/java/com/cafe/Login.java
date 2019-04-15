@@ -12,14 +12,13 @@ public class Login extends BaseTest {
 	public void LoginTest() {
 		LoginPage loginPage = new LoginPage(driver);
 		String correctProfileName = "Hello Luke";
-		loginPage.openLoginPage();
-		loginPage.waitUntilLoad();
-		loginPage.loginDetails("Luke", "Skywalker");
-		MainPage mainPage = loginPage.signInButton();
-		mainPage.waitUntilLoad();
-		Assert.assertTrue(mainPage.isCorrectProfileLoaded(correctProfileName), "Profile Name not expected");
-		// driver.get("http://cafetownsend-angular-rails.herokuapp.com/");
-		// System.out.println("Hi");
+		loginPage.openLoginPage(); // open URL
+		loginPage.waitUntilLoad(); // wait for page to load
+		loginPage.loginDetails("Luke", "Skywalker"); // username and password
+		MainPage mainPage = loginPage.signInButton(); // click on login
+		mainPage.waitUntilLoad(); // wait for page to load
+		Assert.assertTrue(mainPage.isCorrectProfileLoaded(correctProfileName), "Profile Name not expected"); // verification
+
 	}
 
 }

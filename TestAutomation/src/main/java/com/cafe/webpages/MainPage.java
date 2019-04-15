@@ -1,10 +1,7 @@
 package com.cafe.webpages;
 
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 import com.cafe.base.BasePageObject;
 
@@ -22,6 +19,7 @@ public class MainPage extends BasePageObject<MainPage> {
 		waitUntilLoad(createCustomerButton, 10);
 	}
 
+	// verification for correct page
 	public boolean isCorrectProfileLoaded(String correctProfileName) {
 		if (getText(customerGreetings).equals(correctProfileName)) {
 			return true;
@@ -29,6 +27,7 @@ public class MainPage extends BasePageObject<MainPage> {
 		return false;
 	}
 
+	// click create button
 	public CreatePage clickCreateButton() {
 		click(createButton);
 		return new CreatePage(driver);
